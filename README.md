@@ -1,4 +1,4 @@
-# yoga4u
+# MY YOGA FLEX
 
 ## Overview
 
