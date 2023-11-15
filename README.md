@@ -2,7 +2,7 @@
 
 ## Overview
 
-Yoga 4 U is a dynamic yoga application designed to cater to yoga enthusiasts of all levels - from beginners to advanced practitioners. It offers a range of free yoga courses, allowing users to create accounts, set personal yoga goals, and track their progress. The app aims to make yoga accessible and customizable for everyone, promoting health and wellness.
+MY YOGA FLEX is a dynamic yoga application designed to cater to yoga enthusiasts of all levels - from beginners to advanced practitioners. It offers a range of free yoga courses, allowing users to create accounts, set personal yoga goals, and track their progress. The app aims to make yoga accessible and customizable for everyone, promoting health and wellness.
 
 
 ### Problem
@@ -12,7 +12,7 @@ In today's fast-paced world, maintaining physical and mental well-being has beco
 
 ### User Profile
 
-Yoga 4 U is designed for individuals seeking a structured and flexible yoga practice. It caters to users of varying skill levels and offers features like goal setting and progress tracking to keep users motivated. The app is especially beneficial for those who prefer a self-paced, home-based yoga practice.
+MY YOGA FLEX is designed for individuals seeking a structured and flexible yoga practice. It caters to users of varying skill levels and offers features like goal setting and progress tracking to keep users motivated. The app is especially beneficial for those who prefer a self-paced, home-based yoga practice.
 
 
 ### Features
