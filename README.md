@@ -209,4 +209,7 @@ Deploy the application to a hosting service.
 
 ## Nice-to-haves
 
-Your project will be marked based on what you committed to in the above document. Under nice-to-haves, you can list any additional features you may complete if you have extra time, or after finishing.
+1) Live Yoga Classes: Integration of live yoga sessions.
+2) Community Forum: A platform for users to share experiences and tips.
+3) Personalized Recommendations: AI-based suggestions for yoga poses and routines.
+4) ChatBot Integration: Able to answer questions regarding yoga and get tailored answer
