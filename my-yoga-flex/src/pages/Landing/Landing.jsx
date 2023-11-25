@@ -32,14 +32,6 @@ function Landing() {
     fetchCategories();
   }, []);
 
-  // const handleCardClick = (filterType, filterValue) => {
-  //   if (filterType === 'category') {
-  //     const category = categories.find(cat => cat.category_name === filterValue);
-  //     // setSelectedPoses(category ? category.poses : []);
-  //   } else {
-  //     navigate(`/yoga-poses/${filterType}/${filterValue.toLowerCase()}`);
-  //   }
-  // };
 
   const handleCardClick = (title) => {
       navigate(`/yoga-poses/skills/${title}`);
@@ -58,15 +50,6 @@ function Landing() {
       </div>
   
       <div className="main-cards">
-        {/* {selectedFilter === 'skill' &&
-          skillLevelCards.map(card => (
-            <Link to={`/skill-level/${card.title}`} key={card.id}>
-              <div className="main-cards__skill" onClick={() => handleCardClick('skill', card.title)}>
-                {card.title}
-              </div>
-            </Link>
-          ))
-        } */}
 
           {selectedFilter === 'skill' &&
           skillLevelCards.map(card => (
@@ -80,7 +63,6 @@ function Landing() {
   
         {selectedFilter === 'category' &&
           categories.map(category => (
-            // <div key={category.id} className="main-cards__categories" onClick={() => handleCardClick('category', category.category_name)}>
              
             <div className="main-cards__categories" onClick={() => handleSingleCardClick (category.id)}>
               {category.category_name}
@@ -88,17 +70,6 @@ function Landing() {
           ))
         }
       </div>
-  
-      {/* {selectedCategory.poses.length > 0 && (
-        <div className="poses">
-          {selectedCategory.poses.map(pose => (
-            <div key={pose.id} className="pose-card">
-              <img src={pose.url_svg} alt={pose.english_name} />
-              <p>{pose.english_name}</p>
-            </div>
-          ))}
-        </div>
-      )}*/}
     </div> 
   );
   
@@ -106,34 +77,3 @@ function Landing() {
 }
 
 export default Landing;
-
-
-// return (
-  //   <div className="landingPage">
-  //     <div className="filters">
-  //       <button className="filters__buttons" onClick={() => setSelectedFilter('skill')}>Skill Level</button>
-  //       <button className="filters__buttons" onClick={() => setSelectedFilter('category')}>Categories</button>
-  //     </div>
-
-  //     <div className="main-cards">
-  //       {selectedFilter === 'skill' &&
-  //         skillLevelCards.map(card => (
-  //           <Link to={`/skill-level/${card.title}`}>
-  //           <div key={card.id} className="main-cards__skill" onClick={() => handleCardClick('skill', card.title)}>
-  //             {card.title}
-  //           </div>
-  //           </Link>
-  //         ))
-  //       }
-
-  //       {selectedFilter === 'category' &&
-  //         categories.map(category => (
-  //           <div key={category.id} className="main-cards__categories" onClick={() => handleCardClick('category', category.category_name)}>
-  //             {category.category_name}
-  //           </div>
-  //         ))
-  //       }
-  //     </div>
-  //   </div>
-  // );
-
