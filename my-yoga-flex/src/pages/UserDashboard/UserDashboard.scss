@@ -1,0 +1,38 @@
+.dashboard {
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        border: 1px solid black;
+        width: 100vw;
+    }
+}
+
+
+.calendar {
+    display: flex;
+}
+
+.chart {
+    height: 400px !important;
+    width: auto;
+    padding: 2rem;
+}
+
+.react-calendar {
+    &__tile {
+        &--active {
+            color: lightcoral !important;
+        }
+    }
+    
+}

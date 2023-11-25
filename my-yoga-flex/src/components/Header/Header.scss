@@ -1,0 +1,16 @@
+.header {
+    background-color: lightcoral;
+    padding: 2rem;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+}
