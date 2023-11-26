@@ -33,29 +33,37 @@ const link = selectedPose.link;
   return (
     <div className="posesDetails">
 
-        <div className="posesDetails__container">
-            <Link to='/user-dashboard'>
-            <h2><b>Log your activity</b></h2>
-            </Link>
-            <div className="posesDetails__image-container">
-                <img className="posesDetails__image" src={selectedPose.image} alt={selectedPose.english_name} />
-                <iframe className="posesDetails__video" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div className="posesDetails__text-container">
-              <div className="poseDetails__text-container-lines">
-                <p className="poseDetails__text-container-title"><b>Name:</b> </p>
-                <p className="poseDetails__text-container-title-value">{selectedPose.pose_name}</p>
-              </div>
-                <p><b>Name:</b> {selectedPose.pose_name}</p>
-                <p><b>Sanskrit Name:</b> {selectedPose.sanskrit_name}</p>
-                <p><b>Difficulty Level:</b> {selectedPose.difficulty}</p>
-                <p><b>Description:</b> {selectedPose.pose_description}</p>
-                <p><b>Benefits: </b>{selectedPose.benefits}</p>
-            </div>
+      <div className="posesDetails__container">
+        <Link to='/user-dashboard'>
+          <h2><b>Log your activity</b></h2>
+        </Link>
+        <div className="posesDetails__image-container">
+            <img className="posesDetails__image" src={selectedPose.image} alt={selectedPose.english_name} />
+            <iframe className="posesDetails__video" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-       
-       
-      
+        <div className="posesDetails__text-container">
+          <div className="posesDetails__text-container-lines">
+            <p className="posesDetails__text-container-title"><b>Name:</b> </p>
+            <p className="posesDetails__text-container-title-value">{selectedPose.pose_name}</p>
+          </div>
+          <div className="posesDetails__text-container-lines">
+            <p className="posesDetails__text-container-title"><b>Sanskrit Name:</b> </p>
+            <p className="posesDetails__text-container-title-value">{selectedPose.sanskrit_name}</p>
+          </div>
+          <div className="posesDetails__text-container-lines">
+            <p className="posesDetails__text-container-title"><b>Difficulty:</b> </p>
+            <p className="posesDetails__text-container-title-value">{selectedPose.difficulty}</p>
+          </div>
+          <div className="posesDetails__text-container-lines">
+            <p className="posesDetails__text-container-title">Description: </p>
+            <p className="posesDetails__text-container-title-value">{selectedPose.pose_description}</p>
+          </div>
+          <div className="posesDetails__text-container-lines">
+            <p className="posesDetails__text-container-title">Benefits: </p>
+            <p className="posesDetails__text-container-title-value">{selectedPose.benefits}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
