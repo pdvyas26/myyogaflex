@@ -42,6 +42,10 @@ const link = selectedPose.link;
                 <iframe className="posesDetails__video" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className="posesDetails__text-container">
+              <div className="poseDetails__text-container-lines">
+                <p className="poseDetails__text-container-title"><b>Name:</b> </p>
+                <p className="poseDetails__text-container-title-value">{selectedPose.pose_name}</p>
+              </div>
                 <p><b>Name:</b> {selectedPose.pose_name}</p>
                 <p><b>Sanskrit Name:</b> {selectedPose.sanskrit_name}</p>
                 <p><b>Difficulty Level:</b> {selectedPose.difficulty}</p>

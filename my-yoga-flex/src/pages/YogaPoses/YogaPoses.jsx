@@ -38,8 +38,7 @@ function YogaPoses() {
         
           <div onClick={() => handleCardDetailsClick (pose.id)} key={pose.id} className="pose-card">
             <img className="pose-card__image" src={pose.url_svg_alt} alt={pose.english_name} />
-            <p>{pose.english_name}</p>
-            {/* <p>Test</p> */}
+            <p className="pose-card__name">{pose.english_name}</p>
           </div>
   
         );

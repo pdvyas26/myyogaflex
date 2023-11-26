@@ -2,8 +2,9 @@
     
     padding: 2rem;
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.166);
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.450);
     color:rgba(255, 255, 255, 0.475);
 
     &__title {
@@ -14,5 +15,16 @@
     &__images {
         height: 50px;
         width: 50px;
+        padding: 0 1rem;
+    }
+
+    &__feedback {
+        padding: 1rem;
+        border-radius: 1rem;
+        font-weight: 600;
+        color:rgba(255, 255, 255, 0.475);
+        background-color: rgba(0, 0, 0, 0.800);
+
+
     }
 }

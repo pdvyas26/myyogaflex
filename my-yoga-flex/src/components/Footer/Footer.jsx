@@ -10,15 +10,25 @@ function Footer() {
   return (
     <div className="footer">
     <div >
-    <img className="footer__images" src={facebook} alt="facebook logo" />
-    <img className="footer__images" src={insta} alt="facebook logo" />
-    <img className="footer__images" src={twitter} alt="facebook logo" />
-    <img className="footer__images" src={youtube} alt="facebook logo" />
+      <a href="https://www.facebook.com/">
 
+      <img className="footer__images" src={facebook} alt="facebook logo" />
+      </a>
+      <a href="https://www.instagram.com/">
+
+      <img className="footer__images" src={insta} alt="facebook logo" />
+      </a>
+      <a href="https://twitter.com/?lang=en">
+
+      <img className="footer__images" src={twitter} alt="facebook logo" />
+      </a>
+      <a href="https://www.youtube.com/">
+
+      <img className="footer__images" src={youtube} alt="facebook logo" />
+      </a>
     </div>
-    <h1 className="footer__title">FOOTER</h1>
     <div>
-      <p>LEAVE YOUR FEEDBACK HERE</p>
+      <p className="footer__feedback">LEAVE YOUR FEEDBACK HERE</p>
     </div>
 
     </div>

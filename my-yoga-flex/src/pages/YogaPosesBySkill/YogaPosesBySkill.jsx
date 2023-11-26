@@ -30,7 +30,7 @@ function YogaPosesBySkill() {
     return (
         <div className="pose-card" onClick={() => navigate(`/yoga-poses/category/details/${skill.id}`)}>
             <img className="pose-card__image" src={skill.image} alt="" />
-            <p>{skill.pose_name}</p>
+            <p className="pose-card__name">{skill.pose_name}</p>
             
         </div>
     )
