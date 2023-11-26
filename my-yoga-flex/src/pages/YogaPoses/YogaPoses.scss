@@ -1,0 +1,29 @@
+.poses {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pose-card {
+   
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.450);
+    color: white;
+
+
+
+    &-container {
+        display: flex;
+       height: 200px;
+        width: 200px;
+    }
+
+    &__image {
+        height: auto;
+        width: 100%;
+    }
+}
+

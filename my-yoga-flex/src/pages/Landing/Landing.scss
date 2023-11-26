@@ -1,0 +1,97 @@
+.landingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    // background-image: url('../../images/yoga1.jpeg');
+    // background-repeat: no-repeat;
+
+    min-height: 70vh;
+}
+
+// .main-cards {
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+// align-items: center;
+
+// &__skill {
+//     height: 400px;
+//     width: 300px;
+//     margin: 10px;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 2rem;
+//     background-color: rgba(255, 255, 255, 0.449);
+//     border-radius: 0.5rem;
+   
+// }
+
+.main-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__skill {
+        color:rgba(255, 255, 255, 0.475);
+        text-transform: uppercase;
+        height: 400px;
+        width: 300px;
+        margin: 10px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.450);
+        border-radius: 0.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition for hover effects
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); // Initial shadow for normal state
+
+        &:hover {
+            transform: scale(1.05); // Slightly scale up the card on hover
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); // Increase shadow size on hover
+        }
+    }
+
+&__categories {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+}
+
+.filters {
+margin: 2rem 0;
+
+
+
+&__buttons {
+    
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.450);
+    color:rgba(255, 255, 255, 0.475);
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    border-style: none;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    
+    
+    
+    
+
+}
+}

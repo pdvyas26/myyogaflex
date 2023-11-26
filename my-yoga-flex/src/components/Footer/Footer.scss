@@ -1,0 +1,18 @@
+.footer {
+    
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.166);
+    color:rgba(255, 255, 255, 0.475);
+
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__images {
+        height: 50px;
+        width: 50px;
+    }
+}

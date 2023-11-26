@@ -1,0 +1,12 @@
+.quote-container {
+    opacity: 1;
+    transition: opacity 1s ease;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color:rgba(0, 0, 0, 0.615);
+    font-size: 2rem;
+}
+
+.quote-container.fade-out {
+    opacity: 0;
+}
