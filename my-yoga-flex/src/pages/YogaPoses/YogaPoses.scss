@@ -1,0 +1,87 @@
+@import "../../styles/partials/variables.scss";
+@import "../../styles/partials/mixins.scss";
+
+.poses-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    
+    max-height: 62vh;
+}
+
+.button-wrapper {
+    display: flex;
+    max-width: 1200px;
+    // margin: auto;  
+
+    padding-right: 1rem;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.back-button {
+    display: flex;
+    justify-self: left;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.800);
+    color:rgba(255, 255, 255, 0.465);
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    margin-left: 1rem;
+    
+    
+}
+
+
+.poses {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    // margin: auto;
+    overflow-y:auto;
+   
+    justify-content: left;
+}
+
+.pose-card {
+      
+    margin: 1rem;
+    background-color:$default-background;
+    color:$default-font-color;
+    font-weight: 600;
+    height: 250px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+
+    @include tablet {
+        height: 250px;
+        width: 160px;
+    }
+
+    &__image {
+        height: auto;
+        width: 100%;
+       
+    }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 1rem 0;
+        border-radius: 1rem;
+        text-align: center;
+    
+        font-size: $mobile-fonts;
+        
+    }
+}
+

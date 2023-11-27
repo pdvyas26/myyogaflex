@@ -1,0 +1,25 @@
+@import '../../styles/partials/variables.scss';
+@import '../../styles/partials/mixins.scss';
+
+.quote-container {
+    opacity: 1;
+    transition: opacity 1s ease;
+    padding: $mobile-padding;
+    color:$stronger-font-color;
+    font-size: $mobile-fonts;
+    font-weight: $bolder-fonts;
+    margin: 0 1rem;
+
+    @include tablet {
+        font-size: $tablet-fonts;
+        padding: 1rem 2rem;
+    }
+
+    @include desktop {
+        font-size: $desktop-fonts;
+    }
+}
+
+.quote-container.fade-out {
+    opacity: 0;
+}

@@ -1,0 +1,227 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.dashboard-wrapper {
+    overflow-y: auto;
+    
+}
+
+.dashboard {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    
+
+  
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: $darker-shade-background;
+        margin: 1rem;
+        border-radius: $border-radius;
+        color:$default-font-color;
+        font-size: $mobile-fonts;
+        width: 90%;
+
+        @include tablet {
+            font-size: $tablet-fonts;
+            width: 97%;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        border: none;
+        width: 90%;
+        background-color: $darker-shade-background;
+        color:$default-font-color;
+        font-weight: $bolder-fonts;
+        font-size: $desktop-fonts;
+        line-height: 1.5;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: $border-radius;
+        margin: 1rem;
+        
+
+        @include tablet {
+            width: 100%;
+            margin: 0 1rem 0 0;
+        }
+
+        &-button {
+            background-color:$darker-shade-background;
+            color: $stronger-font-color;
+            border: none;
+            padding: 1rem 0.5rem;
+            border-radius: 1.5rem;
+            margin-right: 1rem;
+            width: 7rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+
+            &:hover {
+                background-color: rgba(254, 254, 254, 0.450);
+                color: $dark-shade-background;
+            }
+            
+        }
+
+        &-placeholder {
+            background-color: $default-font-color;
+            color: $default-background;
+            font-weight: 600;
+            border: none;
+            border-radius: $border-radius;
+            width: 6rem;
+            display: inline-flex;
+            text-align: center;
+            padding: 0.5rem 0.5rem;
+        }
+
+        &-name {
+           
+            display: inline-flex;
+            width: 7rem;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 1rem 1rem 0;;
+            
+            
+            
+        }
+
+    }
+}
+
+
+
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    
+    width: auto;
+    
+    @include tablet {
+        justify-content: space-between;
+        flex-direction: row;
+
+
+    }
+}
+
+.chart-container {
+    overflow-x: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    width: 100% !important;
+    border-radius: $border-radius;
+    flex-direction: column;
+}
+
+.chart {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 1rem 0;
+    background-color: $darker-shade-background;
+
+    display: flex;
+    width: 95% !important;
+    
+    
+    min-width: 500px;
+    min-height: 15rem;
+
+    @include tablet {
+        height: 450px !important;
+        margin: 1rem 0;
+        width: 100% !important;
+        
+    }
+
+    &__button {
+        margin-left: 0;
+        
+
+        :hover {
+            background-color: rgba(254, 254, 254, 0.450);
+            color: $dark-shade-background;
+        }
+    }
+
+   
+}
+
+.react-calendar {
+
+    background-color: $darker-shade-background !important;
+    // width: 450px !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    margin: 0 1rem !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+    width: 90% !important;
+    margin-bottom: 1rem !important;
+    font-size: $mobile-fonts !important;
+    flex-grow: 1;
+
+    @include tablet {
+        width: 450px !important;
+        margin-bottom: 0 !important;
+        
+    }
+
+    &__month-view {
+
+
+        &__weekdays{
+            font-size: 1rem !important;
+            color:rgba(255, 255, 255, 0.475);
+           
+        }
+    }
+
+    &__navigation button {
+        background-color: $default-background !important;
+        color: $stronger-font-color;
+        
+    }
+
+    &__tile {
+        color:$default-font-color;
+        font-size: $mobile-fonts !important;
+        width: 90%;
+
+        @include tablet {
+            font-size: 1rem !important;
+
+        }
+
+        
+
+        &--active {
+            color: lightcoral !important;
+            background-color:rgba(255, 255, 255, 0.321) !important;
+            border-radius: 1rem !important;
+        }
+
+        &--now {
+            background-color: rgba(247, 255, 10, 0.376) !important;
+            border-radius: 1rem !important;
+        }
+    }
+    
+}

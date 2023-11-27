@@ -1,0 +1,42 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.header {
+   
+    font-size: $mobile-fonts;
+    padding: $mobile-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $default-background;
+    justify-content: center;
+   
+
+    @include tablet {
+        font-size: $tablet-fonts;
+    }
+
+    @include desktop {
+        font-size: $desktop-fonts;
+    }
+
+    &__title {
+        display: inline-block;
+        padding: $mobile-button-padding;
+        background-color: $default-background;
+        color: $default-font-color;
+        border-radius: $border-radius;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.800);
+            color:rgba(255, 255, 255, 0.765);
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $default-background;
+    }
+}
