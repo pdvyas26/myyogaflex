@@ -5,13 +5,14 @@
     opacity: 1;
     transition: opacity 1s ease;
     padding: $mobile-padding;
-    color:$default-font-color;
+    color:$stronger-font-color;
     font-size: $mobile-fonts;
     font-weight: $bolder-fonts;
     margin: 0 1rem;
 
     @include tablet {
         font-size: $tablet-fonts;
+        padding: 1rem 2rem;
     }
 
     @include desktop {

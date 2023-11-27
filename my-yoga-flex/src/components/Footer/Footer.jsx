@@ -27,8 +27,7 @@ function Footer() {
     </div>
     <div>
       <Link className="footer__link" to='/feedback'>
-
-      <p className="footer__feedback">LEAVE YOUR FEEDBACK HERE</p>
+        <p className="footer__feedback">LEAVE YOUR FEEDBACK</p>
       </Link>
     </div>
 

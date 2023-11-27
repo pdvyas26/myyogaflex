@@ -26,8 +26,6 @@ function YogaPoses() {
     fetchCategoriesPose();
   }, [categoryId]);
 
-  // console.log("selectedCategory", selectedCategory);
-
   const handleCardDetailsClick = (id) => {
     navigate(`/yoga-poses/category/details/${id}`);
   }
@@ -57,37 +55,3 @@ function YogaPoses() {
 }
 
 export default YogaPoses;
-
-
-
-
-// const YogaPoses = () => {
-//   const { filterType, filterValue } = useParams();
-//   const [poses, setPoses] = useState([]);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await axios.get(`https://yoga-api-nzy4.onrender.com/v1/poses?${filterType}=${filterValue}`);
-//         setPoses(response.data);
-//       } catch (error) {
-//         console.error('Error fetching poses:', error);
-//       }
-//     };
-
-//     fetchData();
-//   }, [filterType, filterValue]);
-
-//   return (
-//     <div>
-//       {poses.map(pose => (
-//         <div key={pose.id}>
-//           {/* Display pose data */}
-//           {pose.name}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default YogaPoses;

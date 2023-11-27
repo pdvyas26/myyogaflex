@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios'; // make sure to install axios with `npm install axios`
 import './FeedbackPage.scss';
+import { Link } from 'react-router-dom';
 
 function FeedbackPage() {
     const [formData, setFormData] = useState({
@@ -32,11 +33,15 @@ function FeedbackPage() {
   };
 
     return (
+      
+   
+      
         <div className="form">
-            <h1 className="form__title">CONTACT US</h1>
+    
+            {/* <h1 className="form__title">CONTACT US</h1> */}
             <form onSubmit={handleSubmit}>
                 <div className="form__container">
-                    <label className="form__label">Name:</label>
+                    <label className="form__label">Name</label>
                     <input className="form__input"
                         type="text"
                         name="name"
@@ -46,7 +51,7 @@ function FeedbackPage() {
                     />
                 </div>
                 <div div className="form__container">
-                    <label className="form__label">Email:</label>
+                    <label className="form__label">Email</label>
                     <input className="form__input"
                         type="email"
                         name="email"
@@ -56,7 +61,7 @@ function FeedbackPage() {
                     />
                 </div>
                 <div div className="form__container">
-                    <label className="form__label">Details:</label>
+                    <label className="form__label">Details</label>
                     <textarea className="form__input"
                         name="details" rows="10" cols="40"
                         placeholder="Enter additional details"
@@ -64,8 +69,13 @@ function FeedbackPage() {
                         onChange={handleChange}
                     ></textarea>
                 </div>
-                <button className="form__buttons" type="submit">Submit</button>
-                <button className="form__buttons" type="reset" onClick={handleReset}>Reset</button>
+                <div className="form__buttons-container">
+                  <button className="form__buttons" type="submit">Submit</button>
+                  <button className="form__buttons" type="reset" onClick={handleReset}>Reset</button>
+                  <Link className="button-link" to='/'>
+                    <button className="form__buttons"> Back</button>
+                  </Link>
+                </div>
             </form>
         </div>
     );

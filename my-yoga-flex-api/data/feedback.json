@@ -15,23 +15,8 @@
     "details": "test details"
   },
   {
-    "name": "dfdd",
-    "email": "pdvyas26@gmail.com",
-    "details": "dbvdbv"
-  },
-  {
-    "name": "dfdd",
-    "email": "pdvyas26@gmail.com",
-    "details": "dbvdbv"
-  },
-  {
-    "name": "v",
-    "email": "pdvyas26@gmail.com",
-    "details": "dfgdfff"
-  },
-  {
-    "name": "v",
-    "email": "pdvyas26@gmail.com",
-    "details": "dfgdfff"
+    "name": "User Name",
+    "email": "useremail@gmail.com",
+    "details": "User feedback"
   }
 ]

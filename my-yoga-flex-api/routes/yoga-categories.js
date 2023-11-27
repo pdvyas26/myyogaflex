@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
     const categoriesJSON = fs.readFileSync("./data/categories.json");
     const categories = JSON.parse(categoriesJSON);
     const categoryList = categories.map((category)=> {
-        // console.log("category")
+     
         return {
             id: category.id,
             category_name: category.category_name,
@@ -31,7 +31,7 @@ router.get("/:categoryId", (req, res) => {
 const categoriesJSON = fs.readFileSync("./data/categories.json");
     const categories = JSON.parse(categoriesJSON);
     const categoryList = categories.map((category)=> {
-        // console.log("category id",category.id, category.category_name)
+
         return {
             id: category.id,
             category_name: category.category_name,
@@ -39,10 +39,9 @@ const categoriesJSON = fs.readFileSync("./data/categories.json");
             poses: category.poses
         };
     })
-    
-    // console.log("categoryList", categoryList);
+
     const selectedCategoryList = categoryList.filter((category) => category.id === parseInt(categoryId));
-    // console.log("selectedCategoryList", selectedCategoryList);
+
     res.send(selectedCategoryList);
 })
 

@@ -12,7 +12,7 @@
     font-weight: 600;
     gap: 1rem;
     width: 100%;
-    margin-bottom: 2rem;
+    
     margin-right: 1rem;
 
     @include tablet {
@@ -36,6 +36,19 @@
             font-size: $tablet-fonts;
             border-radius: $border-radius;
         }
+
+        &-contact {
+            background-color: $darker-shade-background;
+
+            &:hover {
+                background-color: rgba(254, 254, 254, 0.450);
+                color: $dark-shade-background;
+            }
+        }
+    }
+
+    &__links {
+        text-decoration: none;
     }
     
 }

@@ -1,5 +1,6 @@
 import React, { useState , useEffect} from 'react';
 import { Line } from 'react-chartjs-2';
+import { Link } from 'react-router-dom';
 import Calendar from 'react-calendar';
 import './UserDashboard.scss';
 import 'react-calendar/dist/Calendar.css';
@@ -39,13 +40,6 @@ function UserDashboard() {
     ]
   });
 
-//   const addYogaSession = (event) => {
-//     event.preventDefault();
-//     const newSession = { date: selectedDate, duration: sessionDuration };
-//     setYogaData([...yogaData, newSession]);
-//     setSessionDuration(0);
-//   };
-
 const addYogaSession = (event) => {
     event.preventDefault();
     // Parse sessionDuration as a number before using it
@@ -77,23 +71,6 @@ const addYogaSession = (event) => {
     setYogaData(updatedData);
   };
 
-//   let data = {
-//     labels: yogaData.map(session => session.date.toLocaleDateString()),
-//     datasets: [
-//       {
-//         label: `Goal (${goal} minutes)`,
-//         data: new Array(yogaData.length).fill(goal),
-//         borderColor: 'rgb(75, 192, 192)',
-//         tension: 0.1
-//       },
-//       {
-//         label: 'Logged Time',
-//         data: yogaData.map(session => session.duration),
-//         borderColor: 'rgb(255, 99, 132)',
-//         tension: 0.1
-//       }
-//     ]
-//   };
 
 useEffect(() => {
     try {
@@ -143,6 +120,7 @@ useEffect(() => {
     console.log("useEffect yogaData", yogaData);
     console.log("useEffect goal", goal);
     console.log("useEffect data", data);
+
     // Save to localStorage when 'data', 'goal', or 'yogaData' updates
    if (yogaData.length > 0) {
         localStorage.setItem('storedYogaData', JSON.stringify(yogaData));
@@ -151,26 +129,6 @@ useEffect(() => {
  
    }
 }, [data, goal, yogaData]);
-
- 
-
-//    data = {
-//     labels: sortedYogaData.map(session => session.date.toLocaleDateString()),
-//     datasets: [
-//       {
-//         label: `Goal (${goal} minutes)`,
-//         data: new Array(sortedYogaData.length).fill(goal),
-//         borderColor: 'rgb(75, 192, 192)',
-//         tension: 0.1
-//       },
-//       {
-//         label: 'Logged Time',
-//         data: sortedYogaData.map(session => session.duration),
-//         borderColor: 'rgb(255, 99, 132)',
-//         tension: 0.1
-//       }
-//     ]
-//   };
 
   return (
     <div className="dashboard-wrapper">
@@ -210,16 +168,18 @@ useEffect(() => {
               />
             </form>
             {editingSession && <button onClick={updateSession}>Save Changes</button>}
-
-
-
-         
-
-
-
           </div>
         </div>
+        <div className="chart-container">
+
         <Line className="chart" data={data} />
+        <Link className="button-wrapper" to='/'>
+          <div className="button-wrapper">
+            <button className="back-button1 chart__button"> Back</button>
+          </div>
+          </Link>
+
+        </div>
       </div>
     </div>
   );

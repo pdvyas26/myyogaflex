@@ -1,10 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
-  
-    
+    box-sizing: border-box;   
 }
 
 .app-background {
@@ -14,6 +11,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    resize: both;
+    // justify-content: space-between;
+    height: 100vh;
+    
 }

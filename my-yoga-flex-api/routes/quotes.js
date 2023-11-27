@@ -7,14 +7,10 @@ router.get("/", (req, res) => {
     const quotes = JSON.parse(quotesJSON);
 
 const quotesList = quotes.map((quote)=> {
-    
-            return {
-                quote: quote.q,
-                author: quote.a,
-}
-
-})
-
+    return {
+        quote: quote.q,
+        author: quote.a,
+}})
     res.send(quotesList);
 })
 

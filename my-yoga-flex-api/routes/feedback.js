@@ -1,21 +1,3 @@
-// const express = require('express');
-// const fs = require('fs');
-// const router = express.Router();
-
-// router.post('/', (req, res) => {
-//     const feedbackData = req.body;
-//     // Save the data to a JSON file
-//     fs.writeFile('./data/feedback.json', JSON.stringify(feedbackData, null, 2), (err) => {
-//         if (err) {
-//             console.error(err);
-//             return res.status(500).send('An error occurred while saving feedback');
-//         }
-//         res.send('Feedback received successfully');
-//     });
-// });
-
-// module.exports = router;
-
 const express = require('express');
 const fs = require('fs');
 const router = express.Router();

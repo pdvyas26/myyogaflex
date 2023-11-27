@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="app-background">
-    <Header />
+      <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/yoga-poses/category/:categoryId" element={<YogaPoses />} />
@@ -21,7 +21,6 @@ function App() {
         <Route path="/yoga-poses/skills/:title" element={<YogaPosesBySkill />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/feedback" element={<FeedbackPage />} />
-        {/* <Route path="/skill-level/:title" element={<SkillComponent />} /> */}
       </Routes>
       <Footer />
     </div>

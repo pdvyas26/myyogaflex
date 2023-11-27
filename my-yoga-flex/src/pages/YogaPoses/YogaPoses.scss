@@ -16,7 +16,7 @@
     max-width: 1200px;
     // margin: auto;  
 
-    padding: 1rem;
+    padding-right: 1rem;
 }
 
 .button-link {
@@ -32,6 +32,7 @@
     font-weight: 600;
     border-radius: 1rem;
     border: none;
+    margin-left: 1rem;
     
     
 }
@@ -61,17 +62,9 @@
     border-radius: 1rem;
 
     @include tablet {
-        height: 200px;
-        width: 150px;
+        height: 250px;
+        width: 160px;
     }
-
- 
-
-    // &-container {
-    //     display: flex;
-    //    height: 150px;
-    //     width: 150px;
-    // }
 
     &__image {
         height: auto;
@@ -86,7 +79,9 @@
         padding: 1rem 0;
         border-radius: 1rem;
         text-align: center;
-        margin-bottom: 1rem;
+    
+        font-size: $mobile-fonts;
+        
     }
 }
 

@@ -1,21 +1,43 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0, 0.450);
-    color:rgba(255, 255, 255, 0.659);
-    font-weight: 600;
-    font-size: 1rem;
+    color:$stronger-font-color;
+    font-weight: $bolder-fonts;
+    font-size: $tablet-fonts;
     line-height: 1.5;
-    margin: 4rem auto;
     text-align: center;
-    border-radius: 1rem;
     justify-content: space-between;
+    background-color: $default-background;
+
+    @include tablet {
+        margin: 2rem auto;
+        border-radius: $border-radius;
+        padding-top: 2rem;
+     
+
+    }
+
+    @include desktop {
+        
+    }
+
+
+
 
     &__container {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__title {
@@ -25,10 +47,13 @@
     &__label {
      
         display: inline-flex;
-        align-self: baseline;
         padding: 1rem 0;
         justify-content: center;
         width: 15%;
+
+        @include tablet {
+            align-self: baseline;
+        }
        
     }
 
@@ -36,16 +61,30 @@
         
         display: inline-flex;
         width: 85%;
-        
+        text-align: center;
         align-items: center;
         padding: 1rem;
         background-color: rgb(0, 0, 0, 0.450);
         color:rgba(255, 255, 255, 0.659);
-       
-        margin: 1rem 2rem 1rem 1rem;
+        
         border-radius: 1rem;
         font-weight: 600;
         font-size: 1rem;
+
+
+        @include tablet {
+            margin: 1rem 2rem 1rem 1rem;
+            
+        }
+       
+    }
+
+    &__buttons-container {
+
+        @include tablet {
+            display: flex;
+            justify-content: right;
+        }
        
     }
 
@@ -53,7 +92,7 @@
         display: inline-flex;
         justify-content: center;
         margin: 0 2rem;
-        padding: 0.5rem 1rem;
+        padding: $tablet-button-padding;
         border-radius: 1rem;
         background-color: rgb(0, 0, 0, 0.450);
         color:rgba(255, 255, 255, 0.659);
@@ -64,9 +103,15 @@
         transition: background-color 0.3s ease;
         margin: 2rem;
 
+        @include tablet {
+            justify-content: right;
+        }
+
         &:hover {
             background-color: rgba(254, 254, 254, 0.450);
             color: rgba(0, 0, 0, 0.558);
         }
+
+
     }
 }

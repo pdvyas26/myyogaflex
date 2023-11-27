@@ -37,7 +37,7 @@ const link = selectedPose.link;
         <div className="posesDetails__navLinks">
           <Link className="button-wrapper" to='/'>
           <div className="button-wrapper">
-            <button className="back-button"> Back</button>
+            <button className="back-button1"> Back</button>
           </div>
           </Link>
           <Link to='/user-dashboard'>
