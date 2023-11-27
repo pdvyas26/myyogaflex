@@ -44,10 +44,21 @@ function Landing() {
   
   return (
     <div className="landingPage">
-      <div className="filters">
-        <button className="filters__buttons" onClick={() => setSelectedFilter('skill')}>Skill Level</button>
-        <button className="filters__buttons" onClick={() => setSelectedFilter('category')}>Categories</button>
-      </div>
+    
+      <div className="filters filters--active">
+      <button 
+        className={`filters__buttons ${selectedFilter === 'skill' ? 'filters__buttons--active' : ''}`}
+        onClick={() => setSelectedFilter('skill')}>
+        Skill Level
+      </button>
+      <button 
+        className={`filters__buttons ${selectedFilter === 'category' ? 'filters__buttons--active' : ''}`}
+        onClick={() => setSelectedFilter('category')}>
+        Categories
+      </button>
+    </div>
+
+      
   
       <div className="main-cards">
 

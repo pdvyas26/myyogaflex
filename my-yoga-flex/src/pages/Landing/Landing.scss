@@ -1,68 +1,68 @@
+@import '../../styles/partials/variables.scss';
+@import '../../styles/partials/mixins.scss';
+
 .landingPage {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-    // background-image: url('../../images/yoga1.jpeg');
-    // background-repeat: no-repeat;
-
-    min-height: 60vh;
+    padding: 0 1rem;
+    min-height: 62vh;
     
 }
 
-// .main-cards {
-// display: flex;
-// flex-wrap: wrap;
-// justify-content: center;
-// align-items: center;
-
-// &__skill {
-//     height: 400px;
-//     width: 300px;
-//     margin: 10px;
-//     text-align: center;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 2rem;
-//     background-color: rgba(255, 255, 255, 0.449);
-//     border-radius: 0.5rem;
-   
-// }
 
 .main-cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 850px;
+    max-width: 1000px;
+    overflow-y: auto;
+
+    @include tablet {
+        flex-direction: row;
+    }
 
     &__skill {
         color:rgba(255, 255, 255, 0.475);
-        text-transform: uppercase;
-        height: 400px;
-        width: 260px;
+        height: 100px;
+        width: 230px;
         margin: 10px;
         font-weight: 600;
         text-align: center;
         display: flex;
+        
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
         background-color: rgba(0, 0, 0, 0.800);
-        border-radius: 0.5rem;
+        border-radius: $border-radius;
         transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition for hover effects
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); // Initial shadow for normal state
+
+        @include tablet {
+            height: 300px;
+            width: 200px;
+            
+        }
+
+        @include desktop {
+            height: 400px;
+            width: 260px;
+        }
 
         &:hover {
             transform: scale(1.05); // Slightly scale up the card on hover
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); // Increase shadow size on hover
         }
+
+
     }
 
 &__categories {
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 230px;
     margin: 10px;
     color:rgba(255, 255, 255, .475);
     font-weight: 600;
@@ -74,7 +74,14 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.800);
-    border-radius: 0.5rem;
+    border-radius: $border-radius;
+    overflow-y: auto;
+    
+
+    @include tablet {
+        height: 150px;
+        width: 150px;
+    }
 
 }
 }
@@ -82,19 +89,57 @@
 .filters {
 margin: 2rem 0;
 
+max-width: 850px;
+display: flex;
+justify-content: space-between;
+
+
+@include tablet {
+    width: 660px;
+
+}
+
+
+@include desktop {
+    width: 840px;
+}
+
 
 
 &__buttons {
     
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.450);
-    color:rgba(255, 255, 255, 0.475);
-    font-weight: 600;
-    font-size: 1.5rem;
+    background-color: $default-background;
+    color:$default-font-color;
+    font-weight: $bolder-fonts;
+    font-size: $tablet-fonts;
     border: none;
     border-style: none;
-    border-radius: 1rem;
-    margin-right: 1rem;
+    border-radius: $border-radius;
+    margin: 1rem;
+    width: 50%;
+    
+
+    @include tablet {
+        margin: 1rem;
+        
+    }
+
+    &:hover {
+        background-color: $dark-shade-background;
+        border: 2px solid $darker-shade-background;
+        color: $default-font-color
+    }
+
+    &--active {
+        background-color: $darker-shade-background;
+        color: $default-font-color;
+        
+        
+    }
+
+    
+
     
     
     

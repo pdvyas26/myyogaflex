@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './YogaPosesBySkill.scss';
+import { Link } from 'react-router-dom';
 
 function YogaPosesBySkill() {
     let {title } = useParams();
@@ -25,10 +26,11 @@ function YogaPosesBySkill() {
   
     return (
       <div className="poses-wrapper">
-      <div className="button-wrapper">
-  
-      <button className="back-button"> Back</button>
-      </div>
+        <Link className="button-link" to='/'>
+        <div className="button-wrapper">
+          <button className="back-button"> Back</button>
+        </div>
+        </Link>
 
 <div className="poses">{selectedSkill?.map((skill)=> {
 

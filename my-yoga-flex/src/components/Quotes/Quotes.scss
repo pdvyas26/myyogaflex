@@ -8,9 +8,14 @@
     color:$default-font-color;
     font-size: $mobile-fonts;
     font-weight: $bolder-fonts;
+    margin: 0 1rem;
 
     @include tablet {
         font-size: $tablet-fonts;
+    }
+
+    @include desktop {
+        font-size: $desktop-fonts;
     }
 }
 

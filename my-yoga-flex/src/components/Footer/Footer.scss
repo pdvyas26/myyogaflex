@@ -1,31 +1,56 @@
+@import '../../styles/partials/variables.scss';
+@import '../../styles/partials/mixins.scss';
+
 .footer {
     
-    padding: 3.47rem;
+    padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    
     align-items: center;
     background-color: rgba(0, 0, 0, 0.450);
     color:rgba(255, 255, 255, 0.475);
     margin-top: 2rem;
 
-    &__title {
-        display: flex;
-        justify-content: center;
+    @include tablet {
+        flex-direction: row;
+        padding: 3.47rem;
+        
     }
+
+    // &__title {
+    //     display: flex;
+    //     justify-content: center;
+    // }
 
     &__images {
         height: auto;
-        width: 5rem;
+        width: 4.5rem;
         padding: 0 1rem;
+
+        @include tablet {
+            width: 5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
     }
 
     &__feedback {
-        text-decoration: none;
+       
         padding: 1rem;
         border-radius: 1rem;
         font-weight: 600;
-        color:rgba(255, 255, 255, 0.475);
-        background-color: rgba(0, 0, 0, 0.800);
+        color:$default-font-color;
+        background-color: $darker-shade-background;
+        border: none;
+        font-size: $mobile-fonts;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 1rem;
         
 
 

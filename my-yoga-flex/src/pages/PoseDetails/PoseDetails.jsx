@@ -34,9 +34,17 @@ const link = selectedPose.link;
     <div className="posesDetails">
 
       <div className="posesDetails__container">
-        <Link to='/user-dashboard'>
-          <h2 className="posesDetails__nav">Log your activity</h2>
-        </Link>
+        <div className="posesDetails__navLinks">
+          <Link className="button-wrapper" to='/'>
+          <div className="button-wrapper">
+            <button className="back-button"> Back</button>
+          </div>
+          </Link>
+          <Link to='/user-dashboard'>
+            <h2 className="posesDetails__nav">Log your activity</h2>
+          </Link>
+        </div>
+
         <div className="posesDetails__image-container">
             <img className="posesDetails__image" src={selectedPose.image} alt={selectedPose.english_name} />
             <iframe className="posesDetails__video" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
