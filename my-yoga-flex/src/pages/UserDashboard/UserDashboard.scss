@@ -1,0 +1,154 @@
+
+.dashboard-wrapper {
+//    display: flex;
+    // justify-content: center;
+    
+}
+
+.dashboard {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+   
+    
+
+  
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        border: none;
+        width: 100%;
+       
+        background-color: rgba(0, 0, 0, 0.700);
+        color:rgba(255, 255, 255, 0.475);
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 1rem;
+        margin-right: 1rem;
+
+        &-button {
+            background-color: rgba(0, 0, 0, 0.800);
+            color: rgba(255, 255, 255, 0.558);
+            border: none;
+            padding: 1rem 0.5rem;
+            border-radius: 1rem;
+            margin-right: 1rem;
+            width: 7rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(254, 254, 254, 0.450);
+                color: rgba(0, 0, 0, 0.558);
+            }
+            
+        }
+
+        &-placeholder {
+            background-color: rgba(255, 255, 255, 0.401);
+            color: rgba(0, 0, 0, 0.475);
+            // font-size: 0.5rem;
+            font-weight: 600;
+            border: none;
+            
+            display: inline-flex;
+            text-align: center;
+            padding: 0.5rem 0.5rem;
+        }
+
+        &-name {
+           
+            display: inline-flex;
+            width: 7rem;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 1rem 1rem 0;;
+            
+            
+            
+        }
+
+    }
+}
+
+
+
+
+.calendar {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    
+}
+
+.chart {
+    height: 450px !important;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    margin: 1rem;
+    display: flex;
+    
+   
+}
+
+.react-calendar {
+
+    background-color: rgba(0, 0, 0, 0.555) !important;
+    // width: 450px !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    margin: 0 1rem !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+
+    &__month-view {
+
+
+        &__weekdays{
+            font-size: 1rem !important;
+            color:rgba(255, 255, 255, 0.475);
+           
+        }
+    }
+
+    &__navigation button {
+        background-color: rgba(0, 0, 0, 0.555) !important;
+        color: rgba(255, 255, 255, 0.475);
+        
+    }
+
+    &__tile {
+
+        font-size: 1rem !important;
+        color:rgba(255, 255, 255, 0.475);
+
+        &--active {
+            color: lightcoral !important;
+            background-color:rgba(255, 255, 255, 0.321) !important;
+            border-radius: 1rem !important;
+        }
+
+        &--now {
+            background-color: rgba(247, 255, 10, 0.376) !important;
+            border-radius: 1rem !important;
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.header {
+   
+    font-size: $mobile-fonts;
+    padding: $mobile-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $default-background;
+
+    @include tablet {
+        font-size: $tablet-fonts;
+    }
+
+    @include desktop {
+        font-size: $desktop-fonts;
+    }
+
+    
+
+
+
+    &__title {
+        display: inline-block;
+        padding: $mobile-button-padding;
+        background-color: $default-background;
+        color: $default-font-color;
+        // font-size: $tablet-fonts;
+
+        border-radius: $border-radius;
+
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: $default-background;
+    }
+
+}
+
+// .navbar {
+//     display: flex;
+//     outline: 1px solid red;
+//     background-color: red;
+
+// }
